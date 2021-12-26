@@ -1,0 +1,70 @@
+#heading {
+  justify-content: center;
+  text-align: center;
+}
+#middleImgHeading {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  font-size: 20px;
+  font-weight: 800;
+  margin: auto;
+}
+#middleImgBoxs {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin: auto;
+}
+#title1 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOMdlbgMGTqon-pH2lPlURn98GkKXAx1E5BQ&usqp=CAU");
+  background-size: cover;
+  width: 20%;
+  height: 150px;
+  display: flex;
+  border-radius: 4px;
+  flex-direction: column-reverse;
+  color: white;
+}
+
+#boxTilte {
+  background-color: rgb(197, 101, 121);
+  color: white;
+  justify-content: center;
+  text-align: center;
+  padding: 1px;
+}
+#title {
+  background-image: url("https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  border-radius: 4px;
+  width: 13%;
+  height: 150px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  color: white;
+  /* margin-left: 5px; */
+}
+
+#title:hover {
+  box-shadow: 0 0 3px black;
+  margin-top: -10px;
+  transition: 0.3s;
+}
+#title1:hover {
+  box-shadow: 0 0 3px black;
+  margin-top: -10px;
+  transition: 0.3s;
+}
+
+#middleImg {
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  /* background: yellow; */
+}
