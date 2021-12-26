@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Imgur</title>
-    <link rel="stylesheet" href="nav.css" />
-  </head>
-  <body>
-    <div id="Header">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imgur.css" />
+    <title>imgur clone</title>
+</head>
+<body>
+    <!-- nav start -->
+     <div id="Header">
       <div class="navContainer">
         <div class="navwrapper">
           <div class="logo">
@@ -65,8 +66,14 @@
               type="text"
               class="input"
               placeholder="images #tags @users oh my!"
+                id="inputboxDbounce"
+              oninput="applyingDbouncing(event)"
             />
           </div>
+          <div id="resultScroll">
+    
+          </div>
+
           <div class="options">
             <div class="logo2">
               <a>
@@ -88,5 +95,76 @@
       </div>
       <div class="title">This site Kills boredom</div>
     </div>
-  </body>
+    <!-- nav end -->
+    <!-- content start -->
+    <div class="outercon">
+     <div id="heading">
+      <h1>Now with more giraffes per pixel!</h1>
+    </div>
+
+    <div id="middleImg">
+      <div id="middleImgHeading">
+        <div>EXPLORE TAGS</div>
+        <div>MORE TAGS +</div>
+      </div>
+      <div id="middleImgBoxs">
+        <div id="title1">
+          <div id="boxTilte">
+            <div>Pokemon</div>
+            <div>FEATURED. 52,104 Posts</div>
+          </div>
+        </div>
+
+        <div id="title">
+          <div id="boxTilte">
+            <div>2021</div>
+            <div>862 Posts</div>
+          </div>
+        </div>
+        <div id="title">
+          <div id="boxTilte">
+            <div>Secret Santa</div>
+            <div>52,104 Posts</div>
+          </div>
+        </div>
+        <div id="title">
+          <div id="boxTilte">
+            <div>Bacon</div>
+            <div>52,104 Posts</div>
+          </div>
+        </div>
+        <div id="title">
+          <div id="boxTilte">
+            <div>Inspiring</div>
+            <div>84,104 Posts</div>
+          </div>
+        </div>
+        <div id="title">
+          <div id="boxTilte">
+            <div>Pondering My Orb</div>
+            <div>382 Posts</div>
+          </div>
+        </div>
+        <div id="title">
+          <div id="boxTilte">
+            <div>Secret Santa workshop</div>
+            <div>243 Posts</div>
+          </div>
+        </div>
+        <div id="title">
+          <div id="boxTilte">
+            <div>Christmas</div>
+            <div>52,104 Posts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div id="displayBody">
+
+    </div>
+    
+</body>
 </html>
+<script src="index.js"></script>
