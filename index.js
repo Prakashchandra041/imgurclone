@@ -1,3 +1,4 @@
+let timer;
 async function displayUi() {
  let data=   await fetch(
       `https://api.unsplash.com/photos/?client_id=1io4F2tEPKCOM3imbQ-YC2z-Eqbvz7xFfgdmnorMPqk`
@@ -23,10 +24,16 @@ displayUi()
 
 function applyingDbouncing() {
     let inputboxDbounceValue = document.getElementById("inputboxDbounce").value;
-    // setTimeout(() => {
-    //     gettingDataDebouncing(inputboxDbounceValue);
-    // },1000)
-    
+
+    if (timer) {
+        console.log("start timer");
+        return false;
+    }
+    timer=setTimeout(() => {
+        gettingDataDebouncing(inputboxDbounceValue); 
+        timer = undefined;
+    }, 300);
+    console.log("end timer");
    
 }
  
