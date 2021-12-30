@@ -1,0 +1,28 @@
+#movieList {
+  width: 31%;
+  height: 400px;
+  background-color: rgb(233, 229, 229);
+  overflow: scroll;
+  margin-left: 33%;
+  display: none;
+}
+#container{
+    margin: auto;
+    text-align: center;
+}
+
+/* #StarWar{
+    text-align: center;
+} */
+#inputId{
+    margin-left: 0%;
+    width: 30%;
+}
+.displayNone{
+    display: none;
+  
+}
+
+#eachMoive{
+    justify-content: center;
+}
