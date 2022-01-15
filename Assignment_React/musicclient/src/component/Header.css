@@ -1,0 +1,19 @@
+.headerBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: grey;
+    color: whitesmoke;
+    
+    
+}
+#headerInput{
+    width: 350px;
+    padding: 10px;
+}
+
+#headerbtn{
+    padding: 10px;
+}
