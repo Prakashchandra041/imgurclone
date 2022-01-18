@@ -9,13 +9,14 @@ export const Header = ({fun}) => {
     const[songData, setSongData]=useState([])
 
       useEffect(() => {
-        getData();
+        getData("rockstar");
     }, [])
     
-    function getData(album) {
+    function getData(x) {
         fetch(`https://saavn.me
-/search?album=love`).then((res) => res.json())
+/search?album=${x}`).then((res) => res.json())
             .then((res) => {
+                console.log(res)
                 setSongData(res);
         
 })        
@@ -29,9 +30,21 @@ export const Header = ({fun}) => {
     function handleBtn() {
         setAlbum(inpval);
         // fun(album);
+          getData(inpval);
         console.log(songData)
     }
 
+    function handleLH() {
+        const updateList = songData.sort((a, b) => a.year - b.year);
+        console.log(updateList)
+        setSongData(updateList);
+    }
+
+    function handleHL() {
+        const updateList = songData.sort((a, b) => b.year - a.year);
+        console.log(updateList);
+        setSongData(updateList);
+    }
    
     return <>
         <div className="headerBox">
@@ -46,6 +59,11 @@ export const Header = ({fun}) => {
 
             
         </div>
+        <div id='shortDiv'>
+            <span>Short  By Year</span>
+            <button onClick={handleLH}>Low To High</button>
+            <button onClick={handleHL}>High To Low</button>
+         </div>
         <ShowData props={songData}></ShowData>
     </>
 }

@@ -1,6 +1,8 @@
 import './ShowData.css'
 export const ShowData = ({props}) => {
-    const { album_name, album_artist, album_id, album_image, album_language, album_link, year }= props;
+    const { album_name, album_artist, album_id, album_image, album_language, album_link, year } = props;
+    
+    console.log("props",props)
     
     
 

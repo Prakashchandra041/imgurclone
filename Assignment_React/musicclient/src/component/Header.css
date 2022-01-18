@@ -17,3 +17,9 @@
 #headerbtn{
     padding: 10px;
 }
+
+#shortDiv{
+    display: flex;;
+    justify-content: right;
+    padding: 20px;
+}
