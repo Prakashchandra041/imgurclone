@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h1>COUTER</h1>  
+      <h2 id="valuediv">0</h2>
+      <button id="increment" onclick="increment()">Increment</button>
+      <button id="decrement" onclick="decrement()">Decrement</button>
+</body>
+</html>
+
+<script>
+    let valuediv=document.getElementById("valuediv");
+    let count=0;
+   let increment=document.getElementById("increment");
+    increment.addEventListener('click',()=>{
+        count++;
+        valuediv.innerHTML=count;
+    })
+
+    let decrement=document.getElementById("decrement");
+    decrement.addEventListener('click',()=>{
+        count--;
+        valuediv.innerHTML=count;
+    })
+
+
+//   function increment(){
+//       count++;
+//       valuediv.innerHTML=count;
+//   }
+//   function decrement(){
+//       count--;
+//       valuediv.innerHTML=count;
+//   }
+   
+
+
+</script>

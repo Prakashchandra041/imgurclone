@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>callBack function and setTimeout</h1>
+     
+    <button id="clickMe">click Me</button>
+
+</body>
+</html>
+
+<script>
+//  code 1
+// setTimeout(()=>{
+//     console.log("inside timer");
+// },5000)
+
+// function x( y){
+//     console.log("inside x");
+//     y();
+// }
+
+// x(function y(){
+//     console.log("inside y")
+// })
+
+// code 2
+
+  function eventlisterFunction(){
+      let count=0;
+      let clickMe=document.getElementById('clickMe')
+      .addEventListener('click',function xyz(){
+          console.log("clicked no",count++);      // USING GLOBAL VARIABLE IS NOT GOOD SOLUTION SO WE USED CLOSER TO 
+      })                                            //HIDE THE COUTN  INNER FUNCTION XYZ CREATE CLOUSER WITH COUNT AND IT WILL
+  }                                                  // ANY CHANGE TO GLOBAL VARIABLE 
+                                                // AT END WE SHOULD CLEAR EVENTLISTER IS CAUSE COLLECTION OF GARBAGE (VALUE WHICH ARE STORE IN CLOSER)       
+
+  eventlisterFunction();
+</script>

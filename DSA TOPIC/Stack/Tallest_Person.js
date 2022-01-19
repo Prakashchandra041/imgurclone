@@ -1,36 +1,30 @@
-// compairison form right
-function findNextGreater(n, data) {
-  let stack = [];
-  let result = [];
-
-  for (let i = n - 1; i >= 0; i--) {
-    while (stack.length !== 0 && stack[stack.length - 1] <= data[i]) {
-      stack.pop();
+function findTallest(n, k, data) {
+  let res = "";
+  for (let i = 0; i <= n - k; i++) {
+    let max = data[i];
+    for (let j = 0; j < k; j++) {
+      if (max < data[i + j]) {
+        max = data[i + j];
+      }
     }
-    if (stack.length === 0) {
-      result.push(-1);
-    } else {
-      result.push(stack[stack.length - 1]);
-    }
-
-    stack.push(data[i]);
+    // console.log("max", max);
+    res += max + " ";
   }
-
-  console.log(result.reverse().join(" "));
+  console.log(res);
 }
 
 function runProgram(input) {
   input = input.trim().split("\n");
   for (let i = 1; i < input.length; i += 2) {
-    let n = +input[i];
+    let [n, k] = input[i].trim().split(" ").map(Number);
     let data = input[i + 1].trim().split(" ").map(Number);
-    findNextGreater(n, data);
+    findTallest(n, k, data);
   }
 }
 if (process.env.USERNAME === "hp") {
   runProgram(`1
-9
-5 6 1 3 0 3 1 8 4`);
+9 3
+1 2 3 1 4 5 2 3 6`);
 } else {
   process.stdin.resume();
   process.stdin.setEncoding("ascii");
