@@ -17,4 +17,5 @@ class Manager extends Employee{
     }
 }
 let empObj = new Employee("Akash");
+empObj.empInfo();
 let managerObj=new Manager("Prakash")

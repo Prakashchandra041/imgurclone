@@ -13,5 +13,6 @@ class Student{
 
 
 let a = new Student()
+console.log(a);
 a.message();
 a.sorry();
