@@ -19,6 +19,7 @@
 function outter() {                   
   let a = 1;
   function inner() {
+    let b = 10;
     console.log(a);
   }
   a = 100;
