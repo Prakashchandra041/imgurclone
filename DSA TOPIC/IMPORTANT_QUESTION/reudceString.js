@@ -1,21 +1,20 @@
-function findSubSequence(res, left, right, data) {
-    if (left <= right + 1 && res !== "") {
-        console.log(res);
-    }
-    for (let i = left; i <= right; i++){
-        findSubSequence(res + data[i], i + 1, right, data);
-    }
-}
-
 function runProgram(input) {
-    input = input.trim().split("\n");
-    let n = +input[0] - 1;
-    let data = input[1].trim();
-    findSubSequence("", 0, n, data);
+  let data = input.trim().split("");
+  let n = data.length;
+  let res = "";
+  let i = 0;
+  while (i <= n) {
+    if (data[i] == data[i + 1]) {
+      i += 2;
+    } else {
+      res += data[i];
+      i++
+     }
+   }
+    console.log(res);
 }
 if (process.env.USERNAME === "hp") {
-    runProgram(`4
-  abcd`);
+  runProgram(`aaabcccddd`);
 } else {
   process.stdin.resume();
   process.stdin.setEncoding("ascii");
