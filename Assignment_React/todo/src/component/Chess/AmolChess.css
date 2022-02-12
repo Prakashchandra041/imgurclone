@@ -1,0 +1,21 @@
+.board {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+  
+}
+
+.whitee {
+  width: 62.5px;
+  height: 62.5px;
+  background: white;
+}
+
+.blackk {
+  width: 62.5px;
+  height: 62.5px;
+  background: #000;
+  color: white;
+}

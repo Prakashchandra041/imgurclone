@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outterBox{
+            /* border: 1px solid black; */
+            display: flex; 
+            flex-wrap: wrap;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: teal;
+            border: 1px solid black;
+        }
+        p::after{
+            content: "hello after";
+            padding: 10px;
+            color: red;
+        }
+        p:hover:before{
+            content: "hello before";
+            padding: 10px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+        <div id="outterBox"> 
+            <div class="inner"></div>
+            <div class="inner"></div>
+            <div class="inner"></div>
+        </div>
+        <p>hello world</p>
+
+</body>
+</html>

@@ -21,7 +21,7 @@ SCOPE*/
 
 //3
 
-// function outter() {                   
+// function outter() {
 //   let a = 1;
 //   function inner() {
 //     let b = 10;

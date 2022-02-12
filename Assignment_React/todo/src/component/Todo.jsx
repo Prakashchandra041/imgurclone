@@ -53,9 +53,6 @@ export const Todo = () => {
                     }}> Delete</button>
                 </div>
             })}
-
-
-
         </div>
 
         
