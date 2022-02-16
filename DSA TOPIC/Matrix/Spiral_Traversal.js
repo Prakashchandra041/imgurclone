@@ -1,8 +1,5 @@
 // WATCH OJ LINK , THERE IS SOMETHING WRONG IN THIS CODE WHIC I WAS NOT ABLE TO FIND 
 
-
-
-
 function spiralTravel(arr, M, N) {
     let top = 0;
     let bottom = N - 1;

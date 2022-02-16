@@ -7,7 +7,7 @@ class ClassName{
     }
 
     message() {
-        console.log(`My name is ${this.name}and my age is ${this.age}`);
+        console.log(`My name is ${this.name} and my age is ${this.age}`);
     }
 
     static MethodName() {

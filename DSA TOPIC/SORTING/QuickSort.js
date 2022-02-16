@@ -17,7 +17,6 @@ function Partition(data, left, right) {
     return i+1
 }
 
-
 function FindQuickSort(data, left, right) {
     if (left < right) {
         let q = Partition(data, left, right);

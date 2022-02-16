@@ -6,7 +6,6 @@ class Employee{
 
         console.log("this is Employe constructor");
     }
-
     info() {
         console.log(`Employe name: ${this.name}, Age:${this.age} and his slaray ${this.salary}`);
     }

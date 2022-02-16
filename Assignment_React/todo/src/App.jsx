@@ -9,14 +9,22 @@ import { Cleanupfun, cleanupfun } from './component/useeffectClearnup/clearupfun
 import { Prakash } from './component/useeffectClearnup/Prakash';
 import { Reduxcounter } from './component/reduxcounter';
 import { Amolchess } from './component/Chess/AmolChess';
+import { PractiseRef } from './component/useRefPractise/PractiseRef';
+import { StopWatch } from './component/useRefPractise/StopWatch';
+import { FormPractise } from './component/FormPractise/FormPractise';
+
 function App() {
   return (
     <div className="App">
+      {/* <StopWatch2></StopWatch2> */}
+       <FormPractise></FormPractise>
+      {/* <StopWatch></StopWatch> */}
+      {/* <PractiseRef></PractiseRef> */}
       {/* <Cleanupfun></Cleanupfun> */}
       {/* <Prakash></Prakash> */}
       {/* <UseEffectApi></UseEffectApi> */}
       {/* <Amolchess></Amolchess> */}
-      <Reduxcounter></Reduxcounter>
+      {/* <Reduxcounter></Reduxcounter> */}
       {/* <Switch>
         <Route exact path="/">
           <h1>home Page</h1>

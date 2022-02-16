@@ -1,6 +1,4 @@
 
-
-
 /* function will be automatically call in browser
    constructor function ke andar hum log property do define karte hai
 

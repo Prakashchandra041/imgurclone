@@ -1,6 +1,5 @@
 // IMPORTANT 
 
-
 function sum_Exist(n, k, data) {
   let i = 0;
   let j = n - 1;

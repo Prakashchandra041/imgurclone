@@ -1,0 +1,47 @@
+.Outterbox{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    
+   
+}
+body{
+background-color: rgb(212, 243, 243);
+}
+
+.LeftInner{
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 248, 172);
+}
+
+.RightInner{
+    border: 1px solid black;
+    width: 45%;
+    background-color: rgb(228, 248, 172);
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    padding: 7.5px;
+    margin: 2.2px;
+    border: 1px solid black;
+}
+.RightInner>div{
+    border: 1px solid black;
+    width: 94%;
+    height: 40px;
+    padding: 8px;
+    margin: 6px;
+}
+.heading{
+    margin-left: 14px;
+}
+
+span{
+    color:red;
+    margin-left: 5px;
+    margin-right: 5px;
+}

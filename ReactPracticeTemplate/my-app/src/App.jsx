@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { LetEndorse } from './components/LetEndorse';
 
 function App() {
   return (
     <div className="App">
-     <h1> hello world</h1>
+      <LetEndorse></LetEndorse>
     </div>
   );
 }
 
-export default App;
+export default App; 
