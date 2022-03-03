@@ -1,7 +1,5 @@
 //code 2
 
-
-
 import {  useRef } from "react";
 export function Example2() {
      
